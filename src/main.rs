@@ -8,9 +8,10 @@ fn main() {
     let mut edad: String = String::new();
     std::io::stdin().read_line(&mut edad).unwrap();
 
-    let edad_int : u8 = edad.trim().parse().unwrap();
+    let edad_int: u8 = edad.trim().parse().unwrap();
 
-    println!("Hola, bienvenido usuario de {} de {} años de edad", pais, edad_int);
+    println!(
+        "Hola, bienvenido usuario de {} de {} años de edad",
+        pais, edad_int
+    );
 }
-
-
